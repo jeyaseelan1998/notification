@@ -5,11 +5,13 @@ import {
   requestUserPermission,
 } from './src/utils/RNFirebaseCloudMessaging.helper';
 import Main from './src/components/Main';
+import {notifeeEventListner} from './src/utils/notifee.helper';
 
 const App = () => {
   useEffect(() => {
     requestUserPermission();
     notificationListener();
+    notifeeEventListner();
   }, []);
 
   return <Main />;

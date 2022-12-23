@@ -1,9 +1,9 @@
 # notification
 
 libraries used:
->Firbase app
->Firebase Cloud Messaging
->notifee
+>Firbase app,
+>Firebase Cloud Messaging,
+>notifee,
 
 note:
 notifee needs following

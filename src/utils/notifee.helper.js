@@ -64,7 +64,9 @@ export const onCreateTriggerNotification = async (title, body, time) => {
   const channelId = await notifee.createChannel({
     id: 'local1999',
     name: 'Channel with custom sound',
-    // sound: 'hollow',
+    sound: 'hollow',
+    lights: true,
+    vibration: false,
   });
   // Create a time-based trigger
   const trigger = {
@@ -79,7 +81,7 @@ export const onCreateTriggerNotification = async (title, body, time) => {
         body,
         android: {
           channelId,
-          sound: 'hollow',
+          // sound: 'hollow',
         },
       },
       trigger,
